@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Adivina el Código</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div id="contenedorDeTodo">
+            <br>
+            <header>
+                <h1>Adivina el Número Secreto</h1>
+            </header>
+            <br>
+            <div id="contenedorResultado">
+                <div class="valorResult">*</div>
+                <div class="valorResult">*</div>
+                <div class="valorResult">*</div>
+                <div class="valorResult">*</div>
+                <div class="valorResult">*</div>
+            </div>
+            <br>
+            <div id="contenedorIntroducir">
+                <h2 id="tituloIntrod">Escribe aquí un número</h2>
+                <br>
+                <label for="introducir"></label>
+                <input type="text" id="introducido" type="number" maxlength="5" name="introducido"><br><br>
+                <button onclick="jugar()">Comprobar</button>
+            </div>
+            <br>
+            <div id="notificador">
+                <h2>Te quedan 5 intentos, enhorabuena</h2>
+            </div>
+            <br>
+            <div id="fila0" class="contenedorValores"></div>
+            <div id="fila1" class="contenedorValores"></div>
+            <div id="fila2" class="contenedorValores"></div>
+            <div id="fila3" class="contenedorValores"></div>
+            <div id="fila4" class="contenedorValores"></div>
+        </div>
+    </body>
+</html>
