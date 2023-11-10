@@ -1,21 +1,4 @@
-/*let codigoAleatorio = Math.floor(Math.random() * 10) + 10000;
-
-function jugar(){
-    let midiv = document.getElementById("contenedorValores");
-
-    for (i = 0; i < 5; i++){
-        let minuevodiv = document.createElement("div");
-        minuevodiv.className = "valorJuego";
-        midiv.appendChild(minuevodiv);
-        let introduc = document.getElementById("introducido")
-        if (codigoAleatorio == introduc){document.getElementById("valorJuego").style.color = "green";}
-        //else if (codigoAleatorio != introduc){document.getElementById("valorJuego").style.color = "red";}
-    }
-
-    console.log(midiv);
-}*/
-
-let codigoAleatorio = ''+ (Math.floor(Math.random() * 10) + 10000);
+let codigoAleatorio = ''+ Math.floor(Math.random() * 10000);
 
 let vpos = 0;
 let intentos = 5;
@@ -49,7 +32,7 @@ function jugar() {
 
     // reducir intentos
     --intentos;
-    document.getElementById("notificador").getElementsByTagName("h2")[0].innerHTML= "Te quedan " + intentos+ " intentos, enhorabuena";
+    document.getElementById("notificador").getElementsByTagName("h2")[0].innerHTML= "Te quedan " + intentos+ " intentos";
     vpos++;
     document.getElementById("introducido").value='';
 
